@@ -1,0 +1,2 @@
+2020-03-28 00:25:13,158 LogHandler.py[line:102] INFO this is a test msg
+2020-03-28 00:25:13,159 LogHandler.py[line:103] ERROR bad error

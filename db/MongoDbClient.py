@@ -10,6 +10,7 @@
                    2020/03/21: This is MongoDB Client operation implementation and  has already finished the test
 ------------------------------------------------------------
 """
+
 __author__ = 'JockMing'
 import pymongo
 
@@ -65,7 +66,7 @@ class MongoDBClient(InterfaceDb):
             conditions_name = ['types', 'protocol']
             for condition_name in conditions_name:
                 var = condition_name
-                value = conditions.get(var)
+                value = conditions[var]
                 if value:
                     conditions[condition_name] = int(value)
         else:
@@ -74,7 +75,7 @@ class MongoDBClient(InterfaceDb):
             [("speed", pymongo.ASCENDING), ("score", pymongo.DESCENDING)])
         results = []
         for item in items:
-            result = (item['ip'], item['port'], item['score'])
+            result = {"ip": item['ip'], "port": item['port'], "score": item['score']}
             results.append(result)
         return results
 

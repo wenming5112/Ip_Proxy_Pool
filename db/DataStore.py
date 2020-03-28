@@ -21,8 +21,6 @@ try:
         from db.SqliteClient import SqliteClient as SqlHelper
     elif DB_CONFIG['DB_CONNECT_TYPE'] == "mongodb":
         from db.MongoDbClient import MongoDBClient as SqlHelper
-    elif DB_CONFIG['DB_CONNECT_TYPE'] == "redis":
-        from db.RedisClient import RedisClient as SqlHelper
     elif DB_CONFIG['DB_CONNECT_TYPE'] == "mysql":
         from db.MysqlClient import MysqlClient as SqlHelper
     else:

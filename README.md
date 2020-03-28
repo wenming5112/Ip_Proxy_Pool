@@ -25,7 +25,7 @@ http://www.network-science.de/ascii/
 
 ## Overview
 
-
+> _Just for learning_
 > _This project continuously crawls the free proxy IP published on the proxy website through crawler, verifies and maintains the proxy that can be used in real time, and provides external use in the form of API._
 
 

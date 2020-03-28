@@ -243,12 +243,12 @@ if __name__ == '__main__':
     sqlite_client.init_db()
     proxy = {'ip': '192.168.1.1', 'port': 80, 'protocol': 0,
              'country': '中国', 'area': '广州', 'speed': 11.123, 'types': 0}
-    re_in = sqlite_client.insert(proxy)
-    print("新增情况", re_in)
-    re_up = sqlite_client.update({'ip': '192.168.1.1', 'port': 80}, {'score': 12})
-    print("是否修改成功", re_up)
+    # re_in = sqlite_client.insert(proxy)
+    # print("新增情况", re_in)
+    # re_up = sqlite_client.update({'ip': '192.168.1.1', 'port': 80}, {'score': 12})
+    # print("是否修改成功", re_up)
     # returned a tuple
-    data = sqlite_client.select(3)
+    data = sqlite_client.select(4)
     print("query data: ", data, " data type: ", type(data))
     # sqlite_client.drop_db()
     sqlite_client.close_db()

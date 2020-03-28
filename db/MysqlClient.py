@@ -27,10 +27,10 @@ if __name__ == '__main__':
     mysql_client.init_db()
     proxy = {'ip': '192.168.1.1', 'port': 80, 'types': 0, 'protocol': 0,
              'country': 'cn', 'area': 'guangzhou', 'speed': 11.123}
-    d = mysql_client.insert(proxy)
-    print("新增结果返回", d)
-    re_up = mysql_client.update({'ip': '192.168.1.1', 'port': 80}, {'score': 13})
-    print("是否修改成功", re_up)
+    # d = mysql_client.insert(proxy)
+    # print("新增结果返回", d)
+    # re_up = mysql_client.update({'ip': '192.168.1.1', 'port': 80}, {'score': 13})
+    # print("是否修改成功", re_up)
     # returned a tuple
     data = mysql_client.select(3)
     print("query data: ", data, " data type: ", type(data))

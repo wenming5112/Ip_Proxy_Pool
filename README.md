@@ -1,6 +1,6 @@
 # Ip_Proxy_Pool
 
-![](https://img.shields.io/badge/Ip_Proxy_Pool-1.0.0-brightgreen.svg)
+![](https://img.shields.io/badge/Ip_Proxy_Pool-dev-brightgreen.svg)
 ![build](https://github.com/Python3WebSpider/ProxyPool/workflows/build/badge.svg)
 ![deploy](https://github.com/Python3WebSpider/ProxyPool/workflows/deploy/badge.svg)
 ![](https://img.shields.io/badge/python-3.7%2B-brightgreen)

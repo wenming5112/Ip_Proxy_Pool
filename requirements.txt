@@ -2,7 +2,7 @@
 click
 werkzeug
 gevent==1.4.0
-redis==2.10.6
+redis==4.5.3
 chardet==3.0.4
 # pip install lxml==4.2.5
 lxml==4.2.5
